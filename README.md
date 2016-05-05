@@ -8,7 +8,7 @@ Compile
 make
 ```
 
-Launch
+Run a map
 ```
 ./fdf ./map/NOAA_ETOPO_HIMALAYA.OCEAN1.XL.fdf
 ```
