@@ -16,14 +16,15 @@ CC = gcc $(GCC_FLAG)
 
 OBJS = $(SRCS:.c=.o)
 
-all: libft minilibx $(NAME)
+all: libft mlx $(NAME)
 	./fdf ./map/42.fdf
 
 libft:
 	make -C ./libft/
 
-minilibx:
+mlx:
 	make -C ./minilibx/
+	cp ./minilibx/libmlx.a ./
 
 $(%.o): $(%.c)
 	$(CC) -o $@ -c $^
